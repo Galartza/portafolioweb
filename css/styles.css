@@ -75,6 +75,7 @@ header {
         visibility: visible;
         right: 0;
         width: 15rem;
+        font-size: 1.8rem;
     }
     
     .nav-list {
