@@ -340,6 +340,7 @@ hr {
     max-width: 400px;
     height:12rem;
     perspective: 1000px;
+    margin-bottom: 1.5rem;
   }
   
   .card-inner {
@@ -382,7 +383,7 @@ hr {
   }
   
   .card-back {
-    background-color: var(--violetaMasClaro);
+    background-color: var(--blanco);
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -395,12 +396,15 @@ hr {
 
 
   .titulo-cards {
-    font-size: 2rem;
+    color: var(--primario);
+    font-size: 1.5rem;
     text-align: center;
+    font-weight: 700;
   }
 
   .texto-cards {
-    font-size: 1.2rem;
+    color: var(--violetaClaro);
+    font-size: 1rem;
     text-align: center;
   }
   
@@ -422,4 +426,8 @@ hr {
   }
   .tecnologias-js {
     color: yellow;
+  }
+
+  .tecnologias-boostrap {
+    color: #7b2cbf;
   }
