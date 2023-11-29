@@ -578,3 +578,74 @@ hr {
         justify-content: center;
     }
 }
+
+/* ------ Contacto ------- */
+#contacto {
+    height: 25rem;
+    background: url(../img/coding-924920_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    background-color: var(--blanco);
+}
+
+.contacto-contenedor {
+    background-color: rgba(0, 0, 0, 0.55);
+    color: var(--blanco);
+    height: 25rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 3fr));
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+.img-logo {
+    height: 15rem;
+}
+.redes {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: start;
+   
+}
+
+.redes a,
+.contactame a {
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+.contactame {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: start;
+}
+.redes a:hover,
+.contactame a:hover {
+    color: var(--primario);
+}
+@media screen and (max-width: 840px) {
+    #contacto {
+        height: 40rem;
+        width: 100%;
+    }
+    .contacto-contenedor {
+        height: 40rem;
+        width: 100%;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+}
+
+footer {
+    background-color: var(--primario);
+    height: 3rem;
+    text-align: center;
+    padding: 1rem 0;
+    color: var(--blanco);
+}
