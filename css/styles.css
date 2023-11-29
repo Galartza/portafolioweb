@@ -521,8 +521,60 @@ hr {
 
 /* ----- Contacto ----- */
 
-#contacto {
-    height: 40rem;
+#Back-end {
+    height: 25rem;
     width: 100%;
     background-color: var(--primario);
+    padding: 2rem;
+}
+.contendor-Back-end {
+    height: 20rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+}
+.contenedor-video {
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1.4rem auto;
+}
+.titulo-back {
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--blanco);
+}
+.texto-videos {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--blanco);
+}
+
+.link-repo {
+    text-decoration: none;
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
+    padding: 5px;
+    border-radius: 2px;
+}
+
+.link-repo:hover {
+    background-color: var(--blanco);
+    color: var(--primario);
+}
+
+
+@media screen and (max-width: 840px) {
+    #Back-end {
+        height: 50rem;
+    }
+    .contendor-Back-end {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 2fr));
+        align-items: center;
+        justify-content: center;
+    }
 }
