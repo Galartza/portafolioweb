@@ -367,7 +367,7 @@ hr {
 
 @media screen and (max-width: 738px) {
     .aside {
-        height: 25rem;
+        height: 28rem;
     }
     .aside-bg {
         height: 100%;
@@ -534,7 +534,6 @@ hr {
     height: 25rem;
     width: 100%;
     background-color: var(--primario);
-    padding: 2rem;
 }
 .contendor-Back-end {
     height: 20rem;
