@@ -609,10 +609,13 @@ hr {
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    text-align: start;
-   
+    align-items: center;
 }
-
+.container-redes{
+    display: flex;
+    gap: 1rem;
+    font-size: 2rem;
+}
 .redes a,
 .contactame a {
     text-decoration: none;
@@ -625,9 +628,17 @@ hr {
     gap: .5rem;
     text-align: start;
 }
+.icon-contacto {
+    font-size: 1.5rem;
+    padding: 0 .5rem;
+}
 .redes a:hover,
 .contactame a:hover {
     color: var(--primario);
+    background-color: var(--blanco);
+    padding: 3px;
+    border-radius: 5px;
+    transition: all .3s ease-in-out;
 }
 @media screen and (max-width: 840px) {
     #contacto {
