@@ -367,7 +367,16 @@ hr {
 
 @media screen and (max-width: 738px) {
     .aside {
-        height: 32rem;
+        height: 25rem;
+    }
+    .aside-bg {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .aside {
+        height: 50rem;
     }
     .aside-bg {
         height: 100%;
