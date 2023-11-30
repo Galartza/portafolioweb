@@ -198,6 +198,12 @@ header {
 
 }
 
+.btn-cv a {
+    text-decoration: none;
+}
+.btn-cv a:hover {
+    color: var(--blanco);
+}
 .btn-cv {
     color: var(--primario);
     font-family: inherit;
