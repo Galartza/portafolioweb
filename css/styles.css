@@ -38,11 +38,17 @@ header {
     width: 50%;
     border-radius: 5px;
     height: 3rem;
-    margin-top: .5em;
-    animation: flotando 1500ms ease-in-out infinite;
+    margin-top: .3em;
     z-index: 2;
+    transition: all 1s ease;
+    transform: translateY(100%);
+    top: -50px;
 }
-
+.header-move {
+    transform: translateY(-100%);
+    top: -100px;
+    transition: all 1s ease;
+}
 .nav-list {
     font-size: 1.5vw;
     list-style-type: none;
@@ -83,7 +89,7 @@ header {
     }
 
     50% {
-        transform: translateY(.2vh);
+        transform: translateY(.4vh);
     }
 
     100% {
@@ -116,7 +122,7 @@ header {
         position: fixed;
         left: 0;
         width: 4rem;
-        margin: 1.5rem;
+        margin: 1rem 1.5rem;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -177,7 +183,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    margin: 1rem;
+    margin: .6rem;
     border-radius: 5px;
     box-shadow: 0px 0px 5px 0px rgba(200, 128, 255, 0.726);
 
@@ -304,6 +310,7 @@ hr {
     width: 100%;
     max-width: 800px;
     height: 30rem;
+    animation: flotando 1200ms ease-in-out infinite;
 }
 
 @media screen and (max-width: 760px) {

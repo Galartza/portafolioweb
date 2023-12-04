@@ -4,6 +4,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const cerrar = document.querySelector("#cerrar");
     const overlay = document.getElementById('overlay');
     const btnCv = document.querySelector(".btn-cv");
+    const header = document.getElementById('header');
+    
+        let prevScrollPos = window.scrollY || window.pageYOffset;
+    
+        function handleScroll() {
+            let currentScrollPos = window.scrollY || window.pageYOffset;
+    
+            if (prevScrollPos > currentScrollPos) {
+                // Hacer algo al hacer scroll hacia arriba
+                header.classList.remove("header-move");
+            } else {
+                // Hacer algo al hacer scroll hacia abajo
+                header.classList.add("header-move");
+            }
+    
+            prevScrollPos = currentScrollPos;
+        }
+    
+
 
     abrir.addEventListener('click', () => {
         nav.classList.add("visible");
@@ -25,4 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
             btnCv.classList.remove("no-hover");
         }
     });
+
+    window.addEventListener('scroll', handleScroll);
+
 });
