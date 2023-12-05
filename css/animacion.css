@@ -1,10 +1,10 @@
-
 /* ------ inicio ------ */
 @keyframes teclear {
     from {
         clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     }
-    to{
+
+    to {
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
 }
@@ -12,6 +12,8 @@
 @keyframes efecto {
     50% {
         border-color: transparent;
+        background-color: #5a189a;
+        color: #ffff;
     }
 }
 
@@ -31,14 +33,3 @@
         transform: translateX(0vh);
     }
 }
-
-@keyframes aparecer {
-    from {
-        font-size: 0%;
-    }
-    to{
-        font-size: 100%;
-    }
-}
-
-

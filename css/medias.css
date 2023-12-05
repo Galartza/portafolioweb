@@ -84,7 +84,7 @@
     #inicio {
         height: 50rem;
     }
-    
+
     .contenedor-inicio {
         height: 50rem;
         display: flex;
@@ -129,6 +129,7 @@
     .aside {
         height: 28rem;
     }
+
     .aside-bg {
         height: 100%;
     }
@@ -138,6 +139,7 @@
     .aside {
         height: 50rem;
     }
+
     .aside-bg {
         height: 100%;
     }
@@ -162,6 +164,7 @@
     #Back-end {
         height: 50rem;
     }
+
     .contendor-Back-end {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 2fr));
@@ -178,10 +181,12 @@
         height: 40rem;
         width: 100%;
     }
+
     .contacto-contacto {
         height: 40rem;
         width: 100%;
     }
+
     .contacto-contenedor {
         height: 40rem;
         width: 100%;

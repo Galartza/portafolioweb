@@ -111,10 +111,12 @@ header {
 
 
 }
+
 .mi-nombre {
     border-right: 3px solid var(--blanco);
     animation: teclear 3s steps(16), efecto .5s step-end infinite alternate;
 }
+
 .btn-cv a {
     text-decoration: none;
     color: var(--primario);
@@ -202,6 +204,7 @@ header {
     transform: translateY(20px);
     transition: opacity 1s, transform 1s;
 }
+
 .contenedor-sobre-mi.animate {
     opacity: 1;
     transform: translateY(0);
@@ -246,6 +249,8 @@ hr {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.65);
     backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: opacity 1s;
 
 }
 
@@ -257,8 +262,10 @@ hr {
     align-items: center;
     justify-content: center;
 
+}
 
-
+.aside-bg.animate {
+    opacity: 1;
 }
 
 .titulo-aside {
@@ -289,6 +296,10 @@ hr {
 
 }
 
+.contenedor-portafolio.animate {
+    opacity: 1;
+}
+
 .contenedor-portafolio {
     height: 30rem;
     width: 100%;
@@ -296,11 +307,20 @@ hr {
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 3fr));
     align-items: center;
     justify-content: center;
+    opacity: 0;
+    transition: opacity 1s;
 }
 
 .titulo-proyectos {
     color: var(--negro);
     text-align: center;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.titulo-proyectos.animate {
+    opacity: 1;
 }
 
 .card {
@@ -428,6 +448,12 @@ hr {
     width: 80%;
     display: flex;
     align-items: center;
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.contendor-Back-end.animate {
+    opacity: 1;
 }
 
 .contenedor-video {
@@ -444,6 +470,12 @@ hr {
     text-align: center;
     text-transform: uppercase;
     color: var(--blanco);
+    opacity: 0;
+    transition: opacity 1s;
+}
+
+.titulo-back.animate {
+    opacity: 1;
 }
 
 .texto-videos {
@@ -469,18 +501,11 @@ hr {
 /* ------ Contacto ------- */
 #contacto {
     height: 25rem;
-    /* background: url(../img/coding-924920_1280.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; */
     width: 100%;
     background-color: var(--blanco);
 }
 
 .contacto-contenedor {
-    /* background-color: rgba(0, 0, 0, 0.65);
-    backdrop-filter: blur(2px); */
     color: var(--primario);
     height: 25rem;
     width: 100%;
@@ -491,6 +516,13 @@ hr {
     justify-content: space-around;
     font-size: 1.2rem;
 
+
+}
+
+.titulo-foot {
+    padding: 3px;
+    border-radius: 2px;
+    animation: efecto .7s step-end infinite alternate;
 }
 
 .contacto-contacto {
@@ -498,10 +530,13 @@ hr {
     width: 100%;
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transition: opacity 1s;
+
 }
 
-.img-logo {
-    height: 12rem;
+.contacto-contacto.animate {
+    opacity: 1;
 }
 
 .redes {
