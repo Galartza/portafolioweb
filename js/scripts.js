@@ -32,9 +32,29 @@ document.addEventListener("DOMContentLoaded", function () {
         nav.classList.remove("visible");     
         btnCv.classList.remove("no-hover");
     });
+    nav.addEventListener('click', () => {
+        nav.classList.remove("visible");     
+        btnCv.classList.remove("no-hover");
+    });
 
+
+    var sobreMiSection = document.querySelector('.contenedor-sobre-mi');
+
+    // Agregar un evento de desplazamiento (scroll)
+    window.addEventListener('scroll', function() {
+        // Verificar si el contenedor-sobre-mi está en el área visible
+        var rect = sobreMiSection.getBoundingClientRect();
+        var isInView = rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2;
+
+        // Si está en el área visible, agregar la clase "animate"
+        if (isInView) {
+            sobreMiSection.classList.add('animate');
+        }
+    });
+    
     window.addEventListener('scroll', handleScroll);
 });
+
 
 
 
