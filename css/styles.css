@@ -522,7 +522,7 @@ hr {
 .titulo-foot {
     padding: 3px;
     border-radius: 2px;
-    animation: efecto .7s step-end infinite alternate;
+    animation: efectoFoot .7s step-end infinite alternate;
 }
 
 .contacto-contacto {
