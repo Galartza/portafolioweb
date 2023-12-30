@@ -25,6 +25,8 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
+/* --------------------------------------- header ---------------------------------------- */
+
 header {
     display: flex;
     align-items: center;
@@ -81,7 +83,7 @@ header {
 }
 
 
-/*------ Inicio ------*/
+/*---------------------------------------- Inicio ----------------------------------------*/
 #inicio {
     height: 40rem;
     background: url(../img/coding-924920_1280.jpg);
@@ -184,7 +186,7 @@ header {
 
 }
 
-/* ----- Sobre mi ------ */
+/* --------------------------------------- Sobre mi ---------------------------------------- */
 #sobreMi {
     height: 35rem;
     width: 100%;
@@ -233,7 +235,7 @@ hr {
 }
 
 
-/* ------ Aside ------ */
+/* ---------------------------------------- Aside ---------------------------------------- */
 .aside {
     height: 20rem;
     text-align: center;
@@ -287,10 +289,10 @@ hr {
 }
 
 
-/* ------ Portafolio ------ */
+/* ---------------------------------------- Portafolio ---------------------------------------- */
 
 #portafolio {
-    height: 40rem;
+    height: 30rem;
     width: 100%;
     background-color: var(--blanco);
 
@@ -322,7 +324,11 @@ hr {
 .titulo-proyectos.animate {
     opacity: 1;
 }
-
+.hr-proyecto {
+    margin: 1rem auto;
+    width: 30%;
+    border: solid 1px var(--primario);
+}
 .card {
     width: 22rem;
     max-width: 400px;
@@ -435,7 +441,7 @@ hr {
     transition: all .5s ease-in-out;
 }
 
-/* ----- Contacto ----- */
+/* --------------------------------------- Sección Back end --------------------------------------- */
 
 #Back-end {
     height: 25rem;
@@ -498,7 +504,7 @@ hr {
 }
 
 
-/* ------ Contacto ------- */
+/* ---------------------------------------- Contacto ----------------------------------------- */
 #contacto {
     height: 25rem;
     width: 100%;
@@ -569,6 +575,8 @@ hr {
     font-size: 1.5rem;
     padding: 0 .5rem;
 }
+
+/* ---------------------------------------- Navegación footer ----------------------------------------- */
 
 .navegacio-footer {
     display: flex;

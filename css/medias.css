@@ -1,4 +1,4 @@
-/* ----- navbar ------ */
+/* -------------------------------------- navbar --------------------------------------- */
 
 @media screen and (max-width: 860px) {
 
@@ -78,7 +78,7 @@
 }
 
 
-/* ------ Inicio ------ */
+/* --------------------------------------- Inicio --------------------------------------- */
 
 @media screen and (max-width: 760px) {
     #inicio {
@@ -95,7 +95,7 @@
 }
 
 
-/* ------ Sobre mi ------ */
+/* --------------------------------------- Sobre mi --------------------------------------- */
 
 @media screen and (max-width: 760px) {
     #sobreMi {
@@ -124,7 +124,8 @@
 }
 
 
-/* ------ aside ------ */
+/* --------------------------------------- aside --------------------------------------- */
+
 @media screen and (max-width: 738px) {
     .aside {
         height: 28rem;
@@ -146,20 +147,22 @@
 }
 
 
-/* ------- Portafolio ------- */
+/* ---------------------------------------- Portafolio ---------------------------------------- */
+
 @media screen and (max-width: 1068px) {
     #portafolio {
-        height: 50rem;
+        height: 40rem;
     }
 }
 
 @media screen and (max-width: 718px) {
     #portafolio {
-        height: 90rem;
+        height: 50rem;
     }
 }
 
-/* ------- Sección Back end -------*/
+/* ---------------------------------------- Sección Back end ----------------------------------------*/
+
 @media screen and (max-width: 840px) {
     #Back-end {
         height: 50rem;
@@ -174,7 +177,7 @@
 }
 
 
-/* ------ Contacto ------- */
+/* --------------------------------------- Contacto ---------------------------------------- */
 
 @media screen and (max-width: 840px) {
     #contacto {
