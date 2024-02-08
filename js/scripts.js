@@ -76,7 +76,35 @@ document.addEventListener("DOMContentLoaded", function () {
 
         prevScrollPos = currentScrollPos;
     });
+ // Seleccionar el enlace del correo electrónico
+ const emailLink = document.querySelector("#email-link");
+
+ // Evento de clic para copiar el correo electrónico al portapapeles
+ emailLink.addEventListener('click', function (event) {
+     event.preventDefault();
+
+     // Crear un elemento de texto temporal
+     var tempInput = document.createElement("input");
+     tempInput.value = "jotaquin99g@gmail.com";
+     document.body.appendChild(tempInput);
+
+     // Seleccionar y copiar el texto
+     tempInput.select();
+     document.execCommand("copy");
+
+     // Eliminar el elemento temporal
+     document.body.removeChild(tempInput);
+
+     // Mostrar un mensaje sobre el texto
+     emailLink.insertAdjacentHTML('afterend', '<div class="mensaje-de-copiado">Correo copiado al portapapeles</div>');
+
+     // Desvanecer el mensaje después de 2 segundos
+     setTimeout(function () {
+         document.querySelector(".mensaje-de-copiado").remove();
+     }, 2000);
+    });
 });
+
 
 
 

@@ -213,4 +213,14 @@
         width: 100%;
         padding: 2rem;
     }
+    .mensaje-de-copiado {
+        font-size: 1rem;
+        background-color: var(--primario);
+        color: var(--blanco);
+        border-radius: 5px;
+        padding: 10px;
+        display: flex;
+        position: absolute;
+        left: 20%;
+    }
 }

@@ -131,6 +131,7 @@ header {
 
 .btn-cv {
     color: var(--primario);
+    background-color: var(--blanco);
     font-family: inherit;
     display: inline-block;
     width: 8em;
@@ -145,7 +146,6 @@ header {
     font-size: 17px;
     border-radius: 6px;
     font-weight: 500;
-    color: var(--primario);
     cursor: pointer;
 }
 
@@ -575,11 +575,23 @@ background-color: var(--blanco);
     color: var(--negro);
     font-weight: 400;
 }
-
+.redes a:hover {
+    color: var(--primario);
+}
 .contactame {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+.mensaje-de-copiado {
+    font-size: 1rem;
+    background-color: var(--primario);
+    color: var(--blanco);
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    left: 8%;
 }
 
 .icon-contacto {
