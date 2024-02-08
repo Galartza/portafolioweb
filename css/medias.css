@@ -1,3 +1,14 @@
+:root {
+    --primario: #5a189a;
+    --violetaClaro: #7a2bbf;
+    --violetaMasClaro: #c880ff;
+    --body: #10002b;
+    --negro: #000000;
+    --blancoMasOscuro: #f8f4e3;
+    --blanco: #ffff;
+
+}
+
 /* -------------------------------------- navbar --------------------------------------- */
 
 @media screen and (max-width: 860px) {
@@ -13,11 +24,11 @@
     }
 
     .abrir-menu {
-        color: var(--blanco);
+        color: var(--negro);
     }
 
     .cerrar-menu {
-        color: var(--blanco);
+        color: var(--negro);
         position: absolute;
     }
 
@@ -30,7 +41,7 @@
         align-items: center;
         justify-content: center;
         border-radius: 100%;
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.75);
+        box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.45);
         z-index: 2;
     }
 
@@ -47,7 +58,7 @@
         top: 0;
         left: 0;
         bottom: 0;
-        background-color: var(--primario);
+        background-color: var(--blanco);
         padding: 2rem;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
         transition: opacity 0.5s ease-in;
@@ -71,8 +82,8 @@
     }
 
     .nav-list li a {
-        color: var(--blanco);
-        font-weight: 100;
+        color: var(--negro);
+        font-weight: 400;
         font-size: 1.5rem;
     }
 }
@@ -82,7 +93,7 @@
 
 @media screen and (max-width: 760px) {
     #inicio {
-        height: 50rem;
+        height: 45rem;
     }
 
     .contenedor-inicio {
@@ -120,6 +131,7 @@
     .img-sm {
         height: 25rem;
         max-width: 400px;
+        filter: drop-shadow(2px 2px 5px #000000);
     }
 }
 
@@ -129,10 +141,16 @@
 @media screen and (max-width: 738px) {
     .aside {
         height: 28rem;
+        background-color: var(--blanco);
+        margin: 1rem;
+        padding: .5rem;
+
     }
 
     .aside-bg {
         height: 100%;
+        background-color: var(--blanco);
+
     }
 }
 
