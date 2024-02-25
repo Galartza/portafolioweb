@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joaquin Galarza</title>
- 
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&display=swap" rel="stylesheet"> -->
@@ -32,42 +34,51 @@
 
 <body>
 
-        <!--------------------------------- Header -------------------------------->
+    <!--------------------------------- Header -------------------------------->
 
 
-    <header class="header " id="header">
+    <header class="header light-theme " id="header">
         <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-xmark"></i></button>
+
+            <a href=""><img class="logo-nav" src="img/JG-logo.png" alt=""></a>
             <ul class="nav-list">
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#sobreMi">Sobre mi</a></li>
                 <li><a href="#portafolio">Portafolio</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
+            <!-- <img class="yo-nav" src="img/yo-removebg-preview.png" alt=""> -->
+            <label class="ui-switch">
+                <input type="checkbox" id="themeToggle">
+                <div class="slider">
+                    <div class="circle"></div>
+                </div>
+            </label>
+
         </nav>
         <div id="overlay"></div>
     </header>
 
-        <!--------------------------------- Contenedor -------------------------------->
+    <!--------------------------------- Contenedor -------------------------------->
 
     <main class="contenedor">
 
         <!--------------------------------- Sección inicio -------------------------------->
 
         <section id="inicio">
-            <div class="contenedor-inicio">
-                <img class="img-inicio" src="img/yo-removebg-preview.png" alt="">
+            <div class="contenedor-inicio ">
+                <!-- <img class="img-inicio" src="img/yo-removebg-preview.png" alt=""> -->
                 <h1 class="mi-nombre">JOAQUIN GALARZA</h1>
-                <p>Programador Front-end</p>
-                <button class="btn-cv"><a class="link-btn-cv" href="Mi-Curriculum2024.pdf" target="_blank">Descargar
-                        CV</a></button>
+                <p class="texo-inicio">Programador Front-end</p>
+                <button class="btn-cv "><a class="link-btn-cv" href="#contacto">Contactame</a></button>
             </div>
         </section>
 
         <!--------------------------------- Sección sobre mi -------------------------------->
 
-        <section id="sobreMi">
+        <section id="sobreMi" class="sobre-mi">
             <div class="contenedor-title">
 
             </div>
@@ -85,6 +96,8 @@
                         autodidacta del desarrollo web Front-end mediante cursos y tutoriales en línea.
                         Además, soy un apasionado jugador de basquetbol adaptado.
                     </p>
+                    <button class="btn-cv btn-ct"><a class="link-btn-cv" href="Mi-Curriculum2024.pdf"
+                            target="_blank">Descarga mi CV</a></button>
                 </div>
                 <img class="img-sm" src="img/sobre mi img.png" alt="">
             </div>
@@ -99,40 +112,44 @@
                 <div class="tecnologias-conozco">
                     <li class="tecnologias-aside">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-html5"
-                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF4500" fill="none"
+                            style="filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));" stroke-linecap="round"
+                            stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
                             <path d="M15.5 8h-7l.5 4h6l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
                         </svg>
-                        
+
                     </li>
                     <li class="tecnologias-aside">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-css3"
-                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00BFFF" fill="none"
+                            style="filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));" stroke-linecap="round"
+                            stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
                             <path d="M8.5 8h7l-4.5 4h4l-.5 3.5l-2.5 .75l-2.5 -.75l-.1 -.5" />
                         </svg>
-                        
+
                     </li>
                     <li class="tecnologias-aside">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-javascript"
-                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFF00" fill="none"
+                            style="filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));" stroke-linecap="round"
+                            stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M20 4l-2 14.5l-6 2l-6 -2l-2 -14.5z" />
                             <path d="M7.5 8h3v8l-2 -1" />
                             <path
                                 d="M16.5 8h-2.5a.5 .5 0 0 0 -.5 .5v3a.5 .5 0 0 0 .5 .5h1.423a.5 .5 0 0 1 .495 .57l-.418 2.93l-2 .5" />
                         </svg>
-                        
+
                     </li>
                     <li class="tecnologias-aside">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-git"
-                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FF4500" fill="none"
+                            style="filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));" stroke-linecap="round"
+                            stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M16 12m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
                             <path d="M12 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
@@ -143,23 +160,25 @@
                             <path
                                 d="M13.446 2.6l7.955 7.954a2.045 2.045 0 0 1 0 2.892l-7.955 7.955a2.045 2.045 0 0 1 -2.892 0l-7.955 -7.955a2.045 2.045 0 0 1 0 -2.892l7.955 -7.955a2.045 2.045 0 0 1 2.892 0z" />
                         </svg>
-                    
+
                     </li>
                     <li class="tecnologias-aside">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-bootstrap"
-                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#7b2cbf" fill="none"
+                            style="filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));" stroke-linecap="round"
+                            stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M2 12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2" />
                             <path d="M2 12a2 2 0 0 1 2 2v4a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-4a2 2 0 0 1 2 -2" />
                             <path d="M9 16v-8h3.5a2 2 0 1 1 0 4h-3.5h4a2 2 0 1 1 0 4h-4z" />
                         </svg>
-                        
+
                     </li>
                     <li class="tecnologias-aside">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-c-sharp"
-                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none"
-                            stroke-linecap="round" stroke-linejoin="round">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon-da icon-tabler icon-tabler-brand-c-sharp"
+                            width="70" height="70" viewBox="0 0 24 24" stroke-width="1" stroke="#007FFF" fill="none"
+                            style="filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.8));" stroke-linecap="round"
+                            stroke-linejoin="round">
                             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path
                                 d="M10 9a3 3 0 0 0 -3 -3h-.5a3.5 3.5 0 0 0 -3.5 3.5v5a3.5 3.5 0 0 0 3.5 3.5h.5a3 3 0 0 0 3 -3" />
@@ -168,7 +187,8 @@
                             <path d="M14 10h7.5" />
                             <path d="M21 14h-7.5" />
                         </svg>
-                        
+
+
                     </li>
 
                 </div>
@@ -180,7 +200,7 @@
             <br>
             <br>
             <h2 class="titulo-proyectos">Proyectos</h2>
-                <hr class="hr-proyecto">
+            <hr class="hr-proyecto">
             <div class="contenedor-portafolio">
 
                 <!---------- Inicio de cards ---------->
@@ -361,7 +381,8 @@
                     <div class="contactame">
                         <h2 class="titulos-footer">Contacto</h2>
                         <br>
-                        <a href="#" id="email-link"><i class="fa-solid fa-envelope icon-contacto"></i> jotaquin99g@gmail.com</a>
+                        <a href="#" id="email-link"><i class="fa-solid fa-envelope icon-contacto"></i>
+                            jotaquin99g@gmail.com</a>
                         <a target="_blank"
                             href="https://api.whatsapp.com/send?phone=+543562564401&amp;text=¡Hola! Me contacto a través de tu portafolio web."><i
                                 class="fa-solid fa-phone icon-contacto"></i> +54 9 3562 564401</a>

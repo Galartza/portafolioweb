@@ -1,10 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Seleccionar elementos del DOM
+    const themeToggle = document.getElementById('themeToggle');
     const nav = document.querySelector("#nav");
     const abrir = document.querySelector("#abrir");
     const cerrar = document.querySelector("#cerrar");
     const btnCv = document.querySelector(".btn-cv");
     const header = document.getElementById('header');
+    const sobreMi = this.querySelector("#sobreMi");
+
+
+    themeToggle.addEventListener('change', function() {
+        if (this.checked) {
+            // Cambiar a tema oscuro
+
+            header.classList.remove('light-theme');
+            header.classList.add('dark-theme');
+            sobreMi.classList.remove('light-theme');
+            sobreMi.classList.add('dark-theme');
+
+
+        } else {
+            // Cambiar a tema claro
+
+            header.classList.remove('dark-theme');
+            header.classList.add('light-theme');
+            sobreMi.classList.remove('light-theme');
+            sobreMi.classList.add('dark-theme');
+
+            
+        }
+    });
+
 
     // Variable para realizar un seguimiento del desplazamiento
     let prevScrollPos = window.scrollY;
@@ -18,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             section.classList.add('animate');
         }
     }
-
+  
     // Función para abrir la navegación y desactivar el hover del botón CV
     function openNav() {
         nav.classList.add("visible");
@@ -104,11 +129,3 @@ document.addEventListener("DOMContentLoaded", function () {
      }, 2000);
     });
 });
-
-
-
-
-
-
-
-
