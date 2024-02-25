@@ -12,7 +12,11 @@
 /* -------------------------------------- navbar --------------------------------------- */
 
 @media screen and (max-width: 860px) {
-
+    .ui-switch {
+        position: absolute;
+        right: 0;
+        padding: 1rem;
+    }
     .abrir-menu,
     .cerrar-menu {
         display: block;
@@ -41,7 +45,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         border-radius: 5px
         box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.45);
         z-index: 2;
@@ -114,12 +118,12 @@
 
 @media screen and (max-width: 760px) {
     #inicio {
-        height: 40rem;
-        margin-bottom: 2rem;
+        height: 45rem;
+
     }
 
     .contenedor-inicio {
-        height: 40rem;
+        height: 45rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -131,11 +135,11 @@
 /* --------------------------------------- Sobre mi --------------------------------------- */
 
 @media screen and (max-width: 760px) {
-    #sobreMi {
+    .sobre-mi {
         height: 50rem;
         width: 100%;
-        background-color: var(--blanco);
-        padding: 3rem;
+
+        padding: 4rem;
 
     }
 

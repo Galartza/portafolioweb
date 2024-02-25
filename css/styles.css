@@ -1,7 +1,7 @@
 :root {
     --primario: rgb(90, 24, 154);
-    --violetaClaro: #7a2bbf;
-    --violetaMasClaro: #c880ff;
+    --violetaClaro: rgb(122, 43, 191);
+    --violetaMasClaro: rgb(200, 128, 255);
     --body: #10002b;
     --negro: #000000;
     --blancoMasOscuro: #f8f4e3;
@@ -76,18 +76,36 @@ header {
     border: solid 2px var(--negro);
     background-size: contain;
 }
+/* ---------------------------------- color tema -------------------------------------- */
+
+.dark-theme header {
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.2);
+}
+.dark-theme .nav .nav-list li a {
+    color: var(--blanco);
+    /* Otros estilos que desees aplicar */
+}
+.dark-theme .abrir-menu,
+.dark-theme .cerrar-menu {
+    color: var(--blanco);
+}
+.dark-theme .visible {
+    background-color: var(--body);
+}
 
 /* -------------------------------------- switch settings ----------------------------------------- */
 
 .ui-switch {
     /* switch */
-    --switch-bg: rgb(16, 0, 43);
+    --switch-bg: rgb(200, 128, 255);
     --switch-width: 48px;
     --switch-height: 20px;
     /* circle */
     --circle-diameter: 32px;
     --circle-bg: rgb(90, 24, 154);
     --circle-inset: calc((var(--circle-diameter) - var(--switch-height)) / 2);
+
+    
   }
   
   .ui-switch input {
@@ -192,7 +210,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 .contenedor-inicio {
     height: 40rem;
      background-color: rgba(0, 0, 0, 0.15);
-    backdrop-filter: blur(1px); 
+
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -289,7 +307,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 }
 
 /* --------------------------------------- Sobre mi ---------------------------------------- */
-#sobreMi {
+.sobre-mi {
     height: 35rem;
     width: 100%;
     background-color: var(--blanco);
@@ -301,7 +319,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.3rem;
+    font-size: 2vh;
     font-weight: 300;
     height: 25rem;
     width: 100%;
@@ -334,7 +352,15 @@ hr {
 .btn-ct {
     margin: 2rem 0;
 }
-
+/* ------------------------------------------------ color tema sobre mi --------------------------------------------- */
+.dark-theme .contenedor-info h2,
+.dark-theme .contenedor-info p{
+    color: var(--blanco);
+    /* Otros estilos que desees aplicar */
+}
+.dark-theme .contenedor-sobre-mi img {
+    filter: drop-shadow(2px 2px 5px var(--primario));
+}
 /* ---------------------------------------- Aside ---------------------------------------- */
 .aside {
     height: 16rem;
@@ -342,8 +368,8 @@ hr {
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.45);
     border-radius: 5px;
 
-margin: 4rem;
-background-color: var(--blanco);
+    margin: 4rem;
+    background-color: var(--blanco);
 
     /* background-color: var(--primario); */
     /* background: url(../img/coding-924920_1280.jpg);
@@ -393,16 +419,26 @@ background-color: var(--blanco);
     font-style: italic;
     margin-bottom: 2rem;
 }
-
-.icon-da {
-
+/* --------------------------------- color tema aside ------------------------ */
+.dark-theme .aside-bg {
+    background-color: var(--body);
+   
+}.dark-theme .aside {
+    background-color: var(--body);
+    box-shadow: 0px 0px 2px 0px rgb(255, 255, 255);
+   
 }
+.dark-theme .aside-bg h3{
+    color: var(--blanco);
+   
+}
+
 /* ---------------------------------------- Portafolio ---------------------------------------- */
 
 #portafolio {
     height: 30rem;
     width: 100%;
-    background-color: var(--blanco);
+    /* background-color: var(--blanco); */
 
 }
 
@@ -539,12 +575,36 @@ background-color: var(--blanco);
     transition: all .5s ease-in-out;
 }
 
+/* --------------------------------------------- color tena portafolio ------------------------------ */
+
+.dark-theme h2{
+    color: var(--blanco);
+   
+}
+.dark-theme h3{
+    color: var(--blanco);
+   
+}
+.dark-theme .contenedor-portafolio .card .card-inner .card-back {
+    background-color: var(--primario);
+    box-shadow: 0px 0px 6px 0px rgba(90, 24, 154, 0.45);
+
+}
+.dark-theme .contenedor-portafolio .card .card-inner .card-back h5,
+.dark-theme .contenedor-portafolio .card .card-inner .card-back p,
+.dark-theme .contenedor-portafolio .card .card-inner .card-back a{
+    color: var(--blanco);
+}
+.dark-theme .contenedor-portafolio .card .card-inner .card-back a{
+    border: 1px solid var(--blanco);
+}
+
+
 /* --------------------------------------- Sección Back end --------------------------------------- */
 
 #Back-end {
     height: 25rem;
     width: 100%;
-    background-color: var(--blanco);
 }
 
 .contendor-Back-end {
@@ -588,13 +648,24 @@ background-color: var(--blanco);
     color: var(--blanco);
     border: 1px solid var(--blanco);
 }
+ /* ---------------- color tema seccion back end -------------------------- */
+ .dark-theme .contendor-Back-end .contenedor-video p,
+.dark-theme .contendor-Back-end .contenedor-video a  {
+    color: var(--blanco);
+
+}
+
+.dark-theme .contendor-Back-end .contenedor-video a  {
+    color: var(--blanco);
+    border: 1px solid var(--blanco);
+}
 
 
 /* ---------------------------------------- Contacto ----------------------------------------- */
 #contacto {
     height: 25rem;
     width: 100%;
-    background-color: var(--blanco);
+
 }
 
 .contacto-contenedor {
@@ -638,14 +709,17 @@ background-color: var(--blanco);
     font-size: 2rem;
 }
 
-.redes a,
-.contactame a,
-.nav-list-foot a {
+.light-theme .contacto-contacto .contacto-contenedor .redes a,
+.light-theme .contacto-contacto .contacto-contenedor .contactame a,
+.light-theme .contacto-contacto .contacto-contenedor .nav-list-foot a {
     text-decoration: none;
     color: var(--negro);
     font-weight: 400;
 }
-.redes a:hover {
+.light-theme .contacto-contacto .contacto-contenedor .redes a:hover,
+.light-theme .contacto-contacto .contacto-contenedor .contactame a:hover,
+.light-theme .contacto-contacto .contacto-contenedor .nav-list-foot a:hover {
+
     color: var(--primario);
 }
 .contactame {
@@ -715,28 +789,47 @@ background-color: var(--blanco);
     align-items: center;
     border-top: solid 1px var(--negro);
 }
-/* Estilos para el tema claro */
+
+/*  --------------------------------------------- contacto tema color ------------------------------------------ */
+
+.dark-theme .contacto-contacto h4 {
+    color: var(--blanco);
+}
+.dark-theme .contacto-contacto .hr-foot-ar {
+    border-bottom: solid 1px var(--blanco);
+}
+.dark-theme .contacto-contacto .hr-foot-ab {
+    border-top: solid 1px var(--blanco);
+    color: var(--blanco);
+}
+.dark-theme .contacto-contacto .contactame a {
+    color: var(--blanco);
+}
+.dark-theme .contacto-contacto .contacto-contenedor .redes a,
+.dark-theme .contacto-contacto .contacto-contenedor .contactame a,
+.dark-theme .contacto-contacto .contacto-contenedor .nav-list-foot a {
+    text-decoration: none;
+    color: var(--blanco);
+    font-weight: 400;
+}
+.dark-theme .contacto-contacto .contacto-contenedor .redes a:hover,
+.dark-theme .contacto-contacto .contacto-contenedor .contactame a:hover,
+.dark-theme .contacto-contacto .contacto-contenedor .nav-list-foot a:hover {
+
+    color: var(--primario);
+
+}
+
+/* ---------------------------------------- Estilos para el tema claro ------------------------------------ */
 .light-theme {
     background-color: var(--blanco);
-    /* Agrega otros estilos según sea necesario */
+   
+
 }
 
 /* Estilos para el tema oscuro */
-.dark-theme {
+ .dark-theme  {
     background-color: rgb(16, 0, 43);
 
-    /* Agrega otros estilos según sea necesario */
-}
-.dark-theme .nav .nav-list li a {
-    color: var(--blanco);
-    /* Otros estilos que desees aplicar */
-}
-.dark-theme .abrir-menu,
-.dark-theme .cerrar-menu {
-    color: var(--blanco);
-}
-.dark-theme .visible {
-    background-color: var(--body);
-}
-/* Agrega estilos comunes aquí */
 
+}

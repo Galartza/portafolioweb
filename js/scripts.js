@@ -4,9 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
     const abrir = document.querySelector("#abrir");
     const cerrar = document.querySelector("#cerrar");
     const btnCv = document.querySelector(".btn-cv");
+    const body = document.querySelector('.body');
     const header = document.getElementById('header');
-    const sobreMi = this.querySelector("#sobreMi");
-
+    const sobreMi = document.querySelector("#sobreMi");
+    const asideTecn = document.querySelector("#Aside");
+    const portafolio = document.querySelector("#portafolio");
+    const backEnd = document.querySelector("#Back-end");
+    const footer = document.querySelector("#contacto");
 
     themeToggle.addEventListener('change', function() {
         if (this.checked) {
@@ -16,16 +20,34 @@ document.addEventListener("DOMContentLoaded", function () {
             header.classList.add('dark-theme');
             sobreMi.classList.remove('light-theme');
             sobreMi.classList.add('dark-theme');
-
+            asideTecn.classList.remove('light-theme');
+            asideTecn.classList.add('dark-theme');
+            body.classList.remove('light-theme');
+            body.classList.add('dark-theme');
+            portafolio.classList.remove('light-theme');
+            portafolio.classList.add('dark-theme');
+            backEnd.classList.remove('light-theme');
+            backEnd.classList.add('dark-theme');
+            footer.classList.remove('light-theme');
+            footer.classList.add('dark-theme');
 
         } else {
             // Cambiar a tema claro
 
             header.classList.remove('dark-theme');
             header.classList.add('light-theme');
-            sobreMi.classList.remove('light-theme');
-            sobreMi.classList.add('dark-theme');
-
+            sobreMi.classList.remove('dark-theme');
+            sobreMi.classList.add('light-theme');
+            asideTecn.classList.remove('dark-theme');
+            asideTecn.classList.add('light-theme');
+            body.classList.remove('dark-theme');
+            body.classList.add('light-theme');
+            portafolio.classList.remove('dark-theme');
+            portafolio.classList.add('light-theme');
+            backEnd.classList.remove('dark-theme');
+            backEnd.classList.add('light-theme');
+            footer.classList.remove('dark-theme');
+            footer.classList.add('light-theme');
             
         }
     });
