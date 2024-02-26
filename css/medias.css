@@ -1,13 +1,15 @@
 :root {
-    --primario: #5a189a;
-    --violetaClaro: #7a2bbf;
-    --violetaMasClaro: #c880ff;
-    --body: #10002b;
+    --AzulOscuro: #001845;
+    --AzulOscuroClaro: #002855;
+    --AzulOscuroMasClaro: #023e7d;
+    --azulMasClaro : #0353a4;
+    --body: #001233;
     --negro: #000000;
     --blancoMasOscuro: #f8f4e3;
     --blanco: #ffff;
 
 }
+
 
 /* -------------------------------------- navbar --------------------------------------- */
 
@@ -99,7 +101,7 @@
     }
     .nav-list li a:hover {
         color: var(--blanco);
-        background-color: var(--primario);
+
         padding: .5rem 2.5rem; 
         border-radius: 5px;
         transition: all 0.2s ease-in;
@@ -216,7 +218,7 @@
 
     @media screen and (max-width: 840px) {
         #Back-end {
-            height: 50rem;
+            height: 30rem;
         }
 
         .contendor-Back-end {
@@ -249,7 +251,7 @@
 
         .mensaje-de-copiado {
             font-size: 1rem;
-            background-color: var(--primario);
+            background-color: var(--AzulOscuroMasClaro);
             color: var(--blanco);
             border-radius: 5px;
             padding: 10px;
